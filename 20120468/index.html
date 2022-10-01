@@ -42,27 +42,27 @@
           <form action="">
             <table>
               <tr>
-                <th>Mã số:</th>
+                <th class="bug2">Mã số:</th>
                 <th><input type="text" id="ID" /></th>
               </tr>
 
               <tr>
-                <th>Họ tên:</th>
+                <th class="bug2">Họ tên:</th>
                 <th><input type="text" id="name" /></th>
               </tr>
 
               <tr>
-                <th>Địa chỉ:</th>
+                <th class="bug2">Địa chỉ:</th>
                 <th><input type="text" id="address" /></th>
               </tr>
 
               <tr>
-                <th>Điện thoại:</th>
+                <th class="bug2">Điện thoại:</th>
                 <th><input type="text" id="phone" /></th>
               </tr>
 
               <tr>
-                <th>Giới tính:</th>
+                <th class="bug2">Giới tính:</th>
                 <th>
                   <input
                     type="radio"
@@ -80,12 +80,12 @@
               </tr>
 
               <tr>
-                <th>Ngày sinh:</th>
+                <th class="bug2">Ngày sinh:</th>
                 <th><input type="date" id="birthday" /></th>
               </tr>
 
               <tr>
-                <th>Email:</th>
+                <th class="bug2">Email:</th>
                 <th><input type="text" id="email" /></th>
               </tr>
             </table>
@@ -94,7 +94,7 @@
 
         <div class="SubjectPlace">
           <div class="c1">
-            <label for="Allsubject">Các môn học</label>
+            <label for="Allsubject" id="bug">Các môn học</label>
             <div class="Allsubject" id="Allsubject">
               <div class="subJ">Lập Trình Hướng Đối Tượng</div>
               <div class="subJ">Cấu Trúc Dữ Liệu</div>
@@ -158,34 +158,35 @@
           </div>
         </div>
       </div>
+      <div class="underline1"></div>
       <!-- vùng của bảng kết quả -->
       <div class="result">
         <table class="listStudent">
-          <tr>
-            <th>Mã Số</th>
-            <th>Họ Và Tên</th>
-            <th>Giới tính</th>
-            <th>Ngày sinh</th>
+          <tr class="title">
+            <th class="id">Mã Số</th>
+            <th class="name">Họ Và Tên</th>
+            <th class="gender">Giới tính</th>
+            <th class="bd">Ngày sinh</th>
           </tr>
-          <tr>
+          <tr class="child">
             <th>20120001</th>
             <th>Nguyễn Thị A</th>
             <th>Nữ</th>
             <th>07/07/2002</th>
           </tr>
-          <tr>
+          <tr class="child">
             <th>20120123</th>
             <th>Trần Văn C</th>
             <th>Nam</th>
             <th>12/24/2002</th>
           </tr>
-          <tr>
+          <tr class="child">
             <th>20120274</th>
             <th>Lê Văn G</th>
             <th>Nam</th>
             <th>06/13/2002</th>
           </tr>
-          <tr>
+          <tr class="child">
             <th>20120634</th>
             <th>Ngô Thị E</th>
             <th>Nữ</th>
@@ -194,10 +195,10 @@
         </table>
       </div>
     </div>
-
+    <div class="underline"></div>
     <footer>
+        Copyright©20120468      
       <ul>
-        Copyright©20120468
         <li>Menu 1</li>
         <li>Menu 2</li>
         <li>Menu 3</li>

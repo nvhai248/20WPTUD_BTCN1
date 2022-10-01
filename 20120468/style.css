@@ -102,7 +102,7 @@ table {
 input {
   float: left;
   text-align: left;
-  width: 96%;
+  width: 98%;
   height: 1rem;
 }
 
@@ -117,14 +117,14 @@ input[type="radio"] {
 .SubjectPlace {
   display: grid;
   grid-template-columns: 47% 6% 47%;
-  grid-template-rows: 100%;
+  grid-template-rows: 91%;
   align-items: center;
   justify-content: center;
 }
 
 .Allsubject {
   border: 2px solid rgb(221, 213, 213);
-  width: 96%;
+  width: 98%;
   height: 100%;
 }
 
@@ -134,7 +134,7 @@ input[type="radio"] {
 
 .ChoseSubJ {
   border: 2px solid rgb(223, 215, 215);
-  width: 96%;
+  width: 98%;
   height: 100%;
 }
 
@@ -171,7 +171,113 @@ input[type="radio"] {
   cursor: pointer;
 }
 
-
 .c1 {
-    height: 100%;
+  height: 100%;
+}
+
+.side {
+  border-left: 2px solid rgb(164, 182, 199);
+  height: 100%;
+}
+
+.side button {
+  width: 100%;
+  height: 3rem;
+  margin-left: 3px;
+  margin-top: 2px;
+  background-color: rgba(255, 115, 0, 0.979);
+  text-align: left;
+}
+
+.content {
+  width: 99.5%;
+  margin-left: 3px;
+  background-color: aliceblue;
+  border: 1px solid rgb(233, 218, 218);
+}
+
+.butPlace {
+  width: 100%;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.register,
+.remove {
+  width: 5rem;
+  border: 2px solid orange;
+  background-color: white;
+  height: 1.5rem;
+}
+
+.register:hover,
+.remove:hover {
+  scale: 104%;
+}
+
+.main .underline1 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 99%;
+  border-right: 2px solid rgb(164, 182, 199);
+}
+
+.result {
+  grid-column-start: 1;
+  border-right: 2px solid rgb(164, 182, 199);
+}
+
+table {
+  border: 2px solid white;
+}
+
+table .title {
+  background-color: rgba(255, 115, 0, 0.979);
+  color: white;
+}
+
+table th {
+  padding: 2px;
+  text-align: center;
+}
+
+.child:nth-child(odd) {
+  background-color: rgb(252, 225, 176);
+}
+
+
+footer {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 42% 58%;
+  margin-top: 5px;
+  color: orange;
+  background-color: rgb(253, 235, 204);
+  text-align: right;
+  box-shadow: 2px 2px 2px 2px #888888;
+  border: 2px solid orange;
+  border-radius: 7px;
+}
+
+footer ul {
+  width: 300px;
+  margin-left: 10px;
+}
+
+footer li {
+  width: 50px;
+  color: orange;
+  border-right: 2px solid orange;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-decoration: underline;
+}
+
+#bug {
+  margin-left: 76%;
+}
+
+.bug2 {
+  float: right;
 }
