@@ -32,111 +32,101 @@
         <li>Menu 5</li>
       </ul>
     </div>
+    <div class="underline"></div>
 
     <div class="main">
       <div class="workPlace">
         <h1>ĐĂNG KÝ HỌC PHẦN</h1>
-        <form action="">
-          <table>
-            <tr>
-              <th><label for="ID">Mã số:</label></th>
-              <th><input type="text" id="ID" /></th>
-            </tr>
+        <div class="underline1"></div>
+        <div class="form">
+          <form action="">
+            <table>
+              <tr>
+                <th>Mã số:</th>
+                <th><input type="text" id="ID" /></th>
+              </tr>
 
-            <tr>
-              <th><label for="name">Họ và tên:</label></th>
-              <th><input type="text" id="name" /></th>
-            </tr>
+              <tr>
+                <th>Họ tên:</th>
+                <th><input type="text" id="name" /></th>
+              </tr>
 
-            <tr>
-              <th><label for="address">Địa chỉ:</label></th>
-              <th><input type="text" id="address" /></th>
-            </tr>
+              <tr>
+                <th>Địa chỉ:</th>
+                <th><input type="text" id="address" /></th>
+              </tr>
 
-            <tr>
-              <th><label for="phone">Điện thoại:</label></th>
-              <th><input type="text" id="phone" /></th>
-            </tr>
+              <tr>
+                <th>Điện thoại:</th>
+                <th><input type="text" id="phone" /></th>
+              </tr>
 
-            <tr>
-              <th><label for="gender">Giới tính:</label></th>
-              <th>
-                <input type="radio" name="gender" value="male" />Nam
-                <input type="radio" name="gender" value="female" />Nữ
-              </th>
-            </tr>
+              <tr>
+                <th>Giới tính:</th>
+                <th>
+                  <input
+                    type="radio"
+                    name="gender"
+                    value="male"
+                    id="male"
+                  /><label for="male">Nam</label>
+                  <input
+                    type="radio"
+                    name="gender"
+                    value="female"
+                    id="female"
+                  /><label for="male">Nữ</label>
+                </th>
+              </tr>
 
-            <tr>
-              <th><label for="birthday">Ngày sinh:</label></th>
-              <th><input type="date" id="birthday" /></th>
-            </tr>
+              <tr>
+                <th>Ngày sinh:</th>
+                <th><input type="date" id="birthday" /></th>
+              </tr>
 
-            <tr>
-              <th><label for="email">Email:</label></th>
-              <th><input type="date" id="email" /></th>
-            </tr>
-          </table>
-        </form>
-        <label for="Allsubject">Các môn học</label>
-        <div class="Allsubject" id="Allsubject">
-          <div class="subJ">Lập Trình Hướng Đối Tượng</div>
-          <div class="subJ">Cấu Trúc Dữ Liệu</div>
-          <div class="subJ">Lập Trình Windows</div>
-          <div class="subJ">NM Công Nghệ Phần Mềm</div>
-          <div class="subJ">Trí Tuệ Nhân Tạo</div>
-          <div class="subJ">Phát Triển Ứng Dụng Web</div>
-          <div class="subJ">Cơ Sở Dữ Liệu</div>
+              <tr>
+                <th>Email:</th>
+                <th><input type="text" id="email" /></th>
+              </tr>
+            </table>
+          </form>
         </div>
 
-        <div class="but">
+        <div class="SubjectPlace">
+          <div class="c1">
+            <label for="Allsubject">Các môn học</label>
+            <div class="Allsubject" id="Allsubject">
+              <div class="subJ">Lập Trình Hướng Đối Tượng</div>
+              <div class="subJ">Cấu Trúc Dữ Liệu</div>
+              <div class="subJ">Lập Trình Windows</div>
+              <div class="subJ">NM Công Nghệ Phần Mềm</div>
+              <div class="subJ">Trí Tuệ Nhân Tạo</div>
+              <div class="subJ">Phát Triển Ứng Dụng Web</div>
+              <div class="subJ">Cơ Sở Dữ Liệu</div>
+            </div>
+          </div>
+
+          <div class="but">
             <button class="but1">></button>
             <button class="but2">>></button>
             <button class="but3"><</button>
             <button class="but4"><<</button>
+          </div>
+          <div class="c1">
+            <label for="ChoseSubJ">Các môn đã chọn</label>
+            <div class="ChoseSubJ" id="ChoseSubJ">
+              <div class="subJ">Nhập Môn Lập Trình</div>
+              <div class="subJ">Kỹ Thuật Lập Trình</div>
+              <div class="subJ">Lập Trình Ứng Dụng Java</div>
+            </div>
+          </div>
         </div>
-        <label for="ChoseSubJ">Các môn đã chọn</label>
-        <div class="ChoseSubJ" id="ChoseSubJ">
-          <div class="subJ">Nhập Môn Lập Trình</div>
-          <div class="subJ">Kỹ Thuật Lập Trình</div>
-          <div class="subJ">Lập Trình Ứng Dụng Java</div>
+        <div class="butPlace">
+          <button class="register">Đăng ký</button>
+          <button class="remove">Xóa hết</button>
         </div>
-
-        <button class="register">Đăng ký</button>
-        <button class="remove">Xóa hết</button>
-
-        <table class="listStudent">
-            <tr>
-                <th>Mã Số</th>
-                <th>Họ Và Tên</th>
-                <th>Giới tính</th>
-                <th>Ngày sinh</th>
-            </tr>
-            <tr>
-                <th>20120001</th>
-                <th>Nguyễn Thị A</th>
-                <th>Nữ</th>
-                <th>07/07/2002</th>
-            </tr>
-            <tr>
-                <th>20120123</th>
-                <th>Trần Văn C</th>
-                <th>Nam</th>
-                <th>12/24/2002</th>
-            </tr>
-            <tr>
-                <th>20120274</th>
-                <th>Lê Văn G</th>
-                <th>Nam</th>
-                <th>06/13/2002</th>
-            </tr>
-            <tr>
-                <th>20120634</th>
-                <th>Ngô Thị E</th>
-                <th>Nữ</th>
-                <th>10/10/2002</th>
-            </tr>
-        </table>
       </div>
+      <!-- vùng của side -->
       <div class="side">
         <div>
           <button>NEWS 01</button>
@@ -167,6 +157,41 @@
             content content content content content
           </div>
         </div>
+      </div>
+      <!-- vùng của bảng kết quả -->
+      <div class="result">
+        <table class="listStudent">
+          <tr>
+            <th>Mã Số</th>
+            <th>Họ Và Tên</th>
+            <th>Giới tính</th>
+            <th>Ngày sinh</th>
+          </tr>
+          <tr>
+            <th>20120001</th>
+            <th>Nguyễn Thị A</th>
+            <th>Nữ</th>
+            <th>07/07/2002</th>
+          </tr>
+          <tr>
+            <th>20120123</th>
+            <th>Trần Văn C</th>
+            <th>Nam</th>
+            <th>12/24/2002</th>
+          </tr>
+          <tr>
+            <th>20120274</th>
+            <th>Lê Văn G</th>
+            <th>Nam</th>
+            <th>06/13/2002</th>
+          </tr>
+          <tr>
+            <th>20120634</th>
+            <th>Ngô Thị E</th>
+            <th>Nữ</th>
+            <th>10/10/2002</th>
+          </tr>
+        </table>
       </div>
     </div>
 
