@@ -64,18 +64,16 @@
               <tr>
                 <th class="bug2">Giới tính:</th>
                 <th>
-                  <input
-                    type="radio"
-                    name="gender"
-                    value="male"
-                    id="male"
-                  /><label for="male">Nam</label>
-                  <input
-                    type="radio"
-                    name="gender"
-                    value="female"
-                    id="female"
-                  /><label for="male">Nữ</label>
+                  <input type="radio" name="gender" value="male" /><label
+                    for="male"
+                    id="forgender"
+                    >Nam</label
+                  >
+                  <input type="radio" name="gender" value="female" /><label
+                    for="male"
+                    id="forgender"
+                    >Nữ</label
+                  >
                 </th>
               </tr>
 
@@ -96,13 +94,13 @@
           <div class="c1">
             <label for="Allsubject" id="bug">Các môn học</label>
             <div class="Allsubject" id="Allsubject">
-              <div class="subJ">Lập Trình Hướng Đối Tượng</div>
-              <div class="subJ">Cấu Trúc Dữ Liệu</div>
-              <div class="subJ">Lập Trình Windows</div>
-              <div class="subJ">NM Công Nghệ Phần Mềm</div>
-              <div class="subJ">Trí Tuệ Nhân Tạo</div>
-              <div class="subJ">Phát Triển Ứng Dụng Web</div>
-              <div class="subJ">Cơ Sở Dữ Liệu</div>
+              <div class="subJ1">Lập Trình Hướng Đối Tượng</div>
+              <div class="subJ1">Cấu Trúc Dữ Liệu</div>
+              <div class="subJ1">Lập Trình Windows</div>
+              <div class="subJ1">NM Công Nghệ Phần Mềm</div>
+              <div class="subJ1">Trí Tuệ Nhân Tạo</div>
+              <div class="subJ1">Phát Triển Ứng Dụng Web</div>
+              <div class="subJ1">Cơ Sở Dữ Liệu</div>
             </div>
           </div>
 
@@ -115,9 +113,9 @@
           <div class="c1">
             <label for="ChoseSubJ">Các môn đã chọn</label>
             <div class="ChoseSubJ" id="ChoseSubJ">
-              <div class="subJ">Nhập Môn Lập Trình</div>
-              <div class="subJ">Kỹ Thuật Lập Trình</div>
-              <div class="subJ">Lập Trình Ứng Dụng Java</div>
+              <div class="subJ2">Nhập Môn Lập Trình</div>
+              <div class="subJ2">Kỹ Thuật Lập Trình</div>
+              <div class="subJ2">Lập Trình Ứng Dụng Java</div>
             </div>
           </div>
         </div>
@@ -166,7 +164,7 @@
       <div class="underline1"></div>
       <!-- vùng của bảng kết quả -->
       <div class="result">
-        <table class="listStudent">
+        <table class="listStudent" id="listStudent">
           <tr class="title">
             <th class="id">Mã Số</th>
             <th class="name">Họ Và Tên</th>

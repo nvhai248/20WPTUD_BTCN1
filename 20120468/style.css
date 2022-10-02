@@ -1,7 +1,6 @@
 * {
   padding: 0%;
 }
-
 body {
   display: grid;
   align-items: center;
@@ -15,7 +14,7 @@ header {
   float: left;
   align-items: center;
   justify-content: center;
-  background-color: rgb(20, 207, 240);
+  background-color: #41CCEC;
   border-radius: 5px;
   font-family: "Courier New", Courier, monospace;
   letter-spacing: 0.5em;
@@ -52,7 +51,7 @@ ul {
   margin-right: auto;
   margin-top: -10px;
   height: 2.5em;
-  background-color: rgb(166, 193, 223);
+  background-color: #B5D4FB;
   box-shadow: 2px 2px 2px 2px #888888;
   border-radius: 5px;
 }
@@ -66,7 +65,7 @@ ul {
 
 .main {
   display: grid;
-  grid-template-columns: 66% 34%;
+  grid-template-columns: 70% 30%;
 }
 
 h1 {
@@ -144,6 +143,21 @@ input[type="radio"] {
   justify-content: center;
 }
 
+.subJ2 {
+  width: 96%;
+  border: 2px solid #C5C5C5;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: 1.7em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #FFFA90;
+  cursor: pointer;
+}
+
 .but button {
   width: 150%;
   margin-top: 3px;
@@ -156,9 +170,9 @@ input[type="radio"] {
   scale: 110%;
 }
 
-.subJ {
+.subJ1 {
   width: 96%;
-  border: 1px solid rgb(170, 163, 163);
+  border: 2px solid #C5C5C5;
   margin-left: auto;
   margin-right: auto;
   margin-top: 5px;
@@ -185,7 +199,7 @@ input[type="radio"] {
   height: 3rem;
   margin-left: 3px;
   margin-top: 2px;
-  background-color: rgba(255, 115, 0, 0.979);
+  background-color: #FF8207;
   text-align: left;
 }
 
@@ -232,7 +246,7 @@ table {
 }
 
 table .title {
-  background-color: rgba(255, 115, 0, 0.979);
+  background-color: #FF8207;
   color: white;
 }
 
@@ -242,7 +256,7 @@ table th {
 }
 
 .child:nth-child(odd) {
-  background-color: rgb(252, 225, 176);
+  background-color: #FFE2B1;
 }
 
 footer {
@@ -252,7 +266,7 @@ footer {
   grid-template-columns: 42% 58%;
   margin-top: 5px;
   color: orange;
-  background-color: rgb(253, 235, 204);
+  background-color: #FFE1B1;
   text-align: right;
   box-shadow: 2px 2px 2px 2px #888888;
   border: 2px solid orange;
@@ -282,11 +296,27 @@ footer li {
 }
 
 .side .isChose {
-  background-color: rgba(250, 217, 125, 0.589);
+  background-color: #FFD8B1;
   color: rgba(255, 115, 0, 0.979);
 }
 
 
 ul .isChose {
   color: red;
+}
+
+.error {
+  border: 2px solid red;
+  color: red;
+}
+
+.isSelect1 {
+  background-color: #F39814;
+  color: white;
+}
+
+
+.isSelect2 {
+  background-color: #F39814;
+  color: white;
 }
