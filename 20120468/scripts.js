@@ -1,4 +1,6 @@
 $(document).ready(function () {
+  $(".content").slideUp();
+
   // sự kiện slide up, dowm
   $(".side button").click(function (e) {
     e.preventDefault();
@@ -108,8 +110,14 @@ $(document).ready(function () {
           "</th> </tr>"
       );
       removeInformation();
+      var obj = $(".subJ2");
+      var temp = "Các môn bạn dã đăng kí là:\n";
+      for (var i = 0; i < obj.length; i++) {
+        temp += obj[i].innerHTML + "\n";
+      }
+      alert(temp);
+      e.preventDefault();
     }
-    e.preventDefault();
   });
 
   $(".remove").click(function (e) {
@@ -120,18 +128,62 @@ $(document).ready(function () {
   // sự kiện khi click vào các môn học
   $(".subJ1").click(function (e) {
     e.preventDefault();
-    $(this).toggleClass("isSelect1");
+    $(this).toggleClass("isSelect");
   });
 
   $(".subJ2").click(function (e) {
     e.preventDefault();
-    $(this).toggleClass("isSelect2");
+    $(this).toggleClass("isSelect");
   });
 
   //sự kiện cho 4 nút để đăng kí môn học
   $(".but1").click(function (e) {
     e.preventDefault();
-    var listSub1 = $(".isSelect1");
-    console.log(listSub1[0]);
+    var listSub1 = $(".Allsubject .isSelect").last();
+    if (listSub1.length != 0) {
+      listSub1[0].classList.remove("subJ1");
+      listSub1[0].classList.remove("isSelect");
+      listSub1[0].classList.add("subJ2");
+      $(".ChoseSubJ").append(listSub1[0]);
+      $(".Allsubject").remove(listSub1[0]);
+    }
+  });
+
+  $(".but2").click(function (e) {
+    e.preventDefault();
+    var listSub1 = $(".Allsubject .isSelect");
+    while (listSub1.length != 0) {
+      var temp = $(".Allsubject .isSelect").last();
+      temp[0].classList.remove("subJ1");
+      temp[0].classList.remove("isSelect");
+      temp[0].classList.add("subJ2");
+      $(".ChoseSubJ").append(temp[0]);
+      $(".Allsubject").remove(temp[0]);
+    }
+  });
+
+  $(".but3").click(function (e) {
+    e.preventDefault();
+    var listSub1 = $(".ChoseSubJ .isSelect").last();
+    if (listSub1.length != 0) {
+      listSub1[0].classList.remove("subJ2");
+      listSub1[0].classList.remove("isSelect");
+      listSub1[0].classList.add("subJ1");
+      $(".Allsubject").append(listSub1[0]);
+      $(".ChoseSubJ").remove(listSub1[0]);
+    }
+  });
+
+  $(".but4").click(function (e) {
+    e.preventDefault();
+    var listSub1 = $(".ChoseSubJ .isSelect");
+    while (listSub1.length != 0) {
+      var temp = $(".ChoseSubJ .isSelect").last();
+      temp[0].classList.remove("subJ2");
+      temp[0].classList.remove("isSelect");
+      temp[0].classList.add("subJ1");
+      $(".Allsubject").append(temp[0]);
+      $(".ChoseSubJ").remove(temp[0]);
+    }
   });
 });
