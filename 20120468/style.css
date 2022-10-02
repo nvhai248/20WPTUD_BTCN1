@@ -245,7 +245,6 @@ table th {
   background-color: rgb(252, 225, 176);
 }
 
-
 footer {
   display: grid;
   align-items: center;
@@ -280,4 +279,14 @@ footer li {
 
 .bug2 {
   float: right;
+}
+
+.side .isChose {
+  background-color: rgba(250, 217, 125, 0.589);
+  color: rgba(255, 115, 0, 0.979);
+}
+
+
+ul .isChose {
+  color: red;
 }
