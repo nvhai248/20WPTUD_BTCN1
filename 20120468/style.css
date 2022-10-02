@@ -14,7 +14,7 @@ header {
   float: left;
   align-items: center;
   justify-content: center;
-  background-color: #41CCEC;
+  background-color: #41ccec;
   border-radius: 5px;
   font-family: "Courier New", Courier, monospace;
   letter-spacing: 0.5em;
@@ -51,7 +51,7 @@ ul {
   margin-right: auto;
   margin-top: -10px;
   height: 2.5em;
-  background-color: #B5D4FB;
+  background-color: #b5d4fb;
   box-shadow: 2px 2px 2px 2px #888888;
   border-radius: 5px;
 }
@@ -145,7 +145,7 @@ input[type="radio"] {
 
 .subJ2 {
   width: 96%;
-  border: 2px solid #C5C5C5;
+  border: 2px solid #c5c5c5;
   margin-left: auto;
   margin-right: auto;
   margin-top: 5px;
@@ -154,7 +154,7 @@ input[type="radio"] {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #FFFA90;
+  background-color: #fffa90;
   cursor: pointer;
 }
 
@@ -172,7 +172,7 @@ input[type="radio"] {
 
 .subJ1 {
   width: 96%;
-  border: 2px solid #C5C5C5;
+  border: 2px solid #c5c5c5;
   margin-left: auto;
   margin-right: auto;
   margin-top: 5px;
@@ -199,10 +199,12 @@ input[type="radio"] {
   height: 3rem;
   margin-left: 3px;
   margin-top: 2px;
-  background-color: #FFD8B1;
+  background: url(image/ringht.png) no-repeat 2%;
+  background-size: 10px;
+  background-color: #ffd8b1;
   color: rgba(255, 115, 0, 0.979);
-  
-  text-align: left;
+  text-transform: capitalize;
+  border: 2px solid rgb(207, 189, 189);
 }
 
 .content {
@@ -210,6 +212,7 @@ input[type="radio"] {
   margin-left: 3px;
   background-color: aliceblue;
   border: 1px solid rgb(233, 218, 218);
+  color: blue;
 }
 
 .butPlace {
@@ -248,7 +251,7 @@ table {
 }
 
 table .title {
-  background-color: #FF8207;
+  background-color: #ff8207;
   color: white;
 }
 
@@ -258,7 +261,7 @@ table th {
 }
 
 .child:nth-child(odd) {
-  background-color: #FFE2B1;
+  background-color: #ffe2b1;
 }
 
 footer {
@@ -268,7 +271,7 @@ footer {
   grid-template-columns: 42% 58%;
   margin-top: 5px;
   color: orange;
-  background-color: #FFE1B1;
+  background-color: #ffe1b1;
   text-align: right;
   box-shadow: 2px 2px 2px 2px #888888;
   border: 2px solid orange;
@@ -298,13 +301,16 @@ footer li {
 }
 
 .side .isChose {
-  background-color: #FF8207;
+  background: url(image/down.png) no-repeat 2%;
+  background-size: 10px;
+  border: 2px solid black;
+  background-color: #ff8207;
   color: white;
 }
 
-
 ul .isChose {
-  color: red;
+  color: white;
+  background-color: orange;
 }
 
 .error {
@@ -312,13 +318,13 @@ ul .isChose {
   color: red;
 }
 
-.isSelect1 {
-  background-color: #F39814;
+.isSelect {
+  background-color: #f39814;
   color: white;
 }
 
 
-.isSelect2 {
-  background-color: #F39814;
-  color: white;
+.headercontent {
+  color: #B0EDFB;
+  text-shadow: 0 0 5px #000000, 0 0 2px #000000;
 }

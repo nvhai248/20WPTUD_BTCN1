@@ -1,6 +1,12 @@
 $(document).ready(function () {
   $(".content").slideUp();
 
+  $(".DAD").draggable({
+    containment: '.side',
+    cursor: 'move',
+    snap: '.side'
+});
+
   // sự kiện slide up, dowm
   $(".side button").click(function (e) {
     e.preventDefault();
@@ -21,6 +27,9 @@ $(document).ready(function () {
   let g = document.getElementsByName("gender");
   let email = $("#email");
   let bd = $("#birthday");
+  var regexID = /^(1[7-9]\d{6})|(2[0-2]\d{6})$/;
+  var regexNameAddress =
+    /^(?!.{21})[A-Z0-9_a-za-vxyỳọáầảấờễàạằệếýộậốũứĩõúữịỗìềểẩớặòùồợãụủíỹắẫựỉỏừỷởóéửỵẳẹèẽổẵẻỡơôưăêâđ,]{2,}(\s[A-Z0-9_a-za-vxyỳọáầảấờễàạằệếýộậốũứĩõúữịỗìềểẩớặòùồợãụủíỹắẫựỉỏừỷởóéửỵẳẹèẽổẵẻỡơôưăêâđ,]{2,})*$/;
   //code kieemr tra mail
   let regexMail =
     /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -56,11 +65,11 @@ $(document).ready(function () {
     );
 
     var checkError = false;
-    if (id.val() == "") {
+    if (id.val() == "" || !regexID.test(id.val())) {
       id.addClass("error");
       checkError = true;
     }
-    if (name.val() == "") {
+    if (name.val() == "" || !regexNameAddress.test(name.val())) {
       name.addClass("error");
       checkError = true;
     }
@@ -80,7 +89,7 @@ $(document).ready(function () {
       checkError = true;
     }
 
-    if (address.val() == "") {
+    if (address.val() == "" || !regexNameAddress.test(address.val())) {
       address.addClass("error");
       checkError = true;
     }
